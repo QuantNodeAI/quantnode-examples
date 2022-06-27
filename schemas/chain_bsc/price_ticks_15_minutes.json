@@ -1,0 +1,67 @@
+{
+
+  "$id": "/chain_bsc/price_ticks_15_minutes.json",
+  "title": "price_ticks_15_minutes",
+  "description": "Aggregated 15 minutes Price Candles for tokens and different platforms",
+  "properties": {
+    "bucket": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Database type: timestamp with time zone. Default value: null"
+    },
+    "token_id": {
+      "type": "number",
+      "description": "Database type: integer. Default value: null"
+    },
+    "platform_id": {
+      "type": "number",
+      "description": "Database type: integer. Default value: null"
+    },
+    "close_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Database type: timestamp with time zone. Default value: null"
+    },
+    "open_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Database type: timestamp with time zone. Default value: null"
+    },
+    "close_stable": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "close_peg": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "open_stable": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "open_peg": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "high_stable": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "high_peg": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "low_stable": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "low_peg": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    }
+  },
+  "required": [
+    "bucket"
+  ],
+  "type": "object"
+}

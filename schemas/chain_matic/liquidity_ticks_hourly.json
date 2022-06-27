@@ -1,0 +1,29 @@
+{
+
+  "$id": "/chain_matic/liquidity_ticks_hourly.json",
+  "title": "liquidity_ticks_hourly",
+  "description": "Aggregated hourly LP Pool Liquidity Data",
+  "properties": {
+    "bucket": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Database type: timestamp with time zone. Default value: null"
+    },
+    "token_id": {
+      "type": "number",
+      "description": "Database type: integer. Default value: null"
+    },
+    "liquidity0": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "liquidity1": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    }
+  },
+  "required": [
+    "bucket"
+  ],
+  "type": "object"
+}

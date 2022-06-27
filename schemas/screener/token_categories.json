@@ -1,0 +1,38 @@
+{
+
+  "$id": "/screener/token_categories.json",
+  "title": "token_categories",
+  "description": "Missing description",
+  "properties": {
+    "analysis_token_id": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: null"
+    },
+    "analysis_chain": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: null"
+    },
+    "category_id": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: null"
+    },
+    "time_frame_analysis_chain": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: null"
+    },
+    "time_frame_analysis_token_id": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: null"
+    },
+    "time_frame_analysis_timeframe": {
+      "type": "string",
+      "description": "Database type: text. Default value: null"
+    }
+  },
+  "required": [
+    "analysis_token_id",
+    "analysis_chain",
+    "category_id"
+  ],
+  "type": "object"
+}

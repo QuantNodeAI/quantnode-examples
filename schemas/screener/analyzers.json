@@ -1,0 +1,34 @@
+{
+
+  "$id": "/screener/analyzers.json",
+  "title": "analyzers",
+  "description": "Missing description",
+  "properties": {
+    "id": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: nextval('screener.analyzers_id_seq'::regclass)"
+    },
+    "name": {
+      "type": "string",
+      "description": "Database type: text. Default value: null"
+    },
+    "active_tokens": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: null"
+    },
+    "chain": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: null"
+    },
+    "exchange": {
+      "type": "string",
+      "description": "Database type: text. Default value: null"
+    },
+    "active": {
+      "type": "boolean",
+      "description": "Database type: boolean. Default value: true"
+    }
+  },
+  "required": [],
+  "type": "object"
+}

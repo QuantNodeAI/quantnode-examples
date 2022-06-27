@@ -1,0 +1,29 @@
+{
+
+  "$id": "/chain_eth/swap_number_ticks_daily.json",
+  "title": "swap_number_ticks_daily",
+  "description": "Aggregated daily Swaps number data",
+  "properties": {
+    "bucket": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Database type: timestamp with time zone. Default value: null"
+    },
+    "token0_id": {
+      "type": "number",
+      "description": "Database type: integer. Default value: null"
+    },
+    "token1_id": {
+      "type": "number",
+      "description": "Database type: integer. Default value: null"
+    },
+    "count": {
+      "type": "number",
+      "description": "Database type: integer. Default value: null"
+    }
+  },
+  "required": [
+    "bucket"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,83 @@
+{
+
+  "$id": "/screener/analyses.json",
+  "title": "analyses",
+  "description": "Basic token info and basic ono time-frame dependant analysis",
+  "properties": {
+    "token_id": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: null"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Database type: timestamp with time zone. Default value: null"
+    },
+    "exchange": {
+      "type": "string",
+      "description": "Database type: text. Default value: null"
+    },
+    "chain": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: null"
+    },
+    "created": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Database type: timestamp with time zone. Default value: null"
+    },
+    "price": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "price_change1_h": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "price_change4_h": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "price_change1_d": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "price_change7_d": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "price_change1_mn": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "price_change_all": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "volume1_h": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "volume24_h": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "market_cap": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "total_supply": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "circulating_supply_portion": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    }
+  },
+  "required": [
+    "token_id",
+    "chain"
+  ],
+  "type": "object"
+}

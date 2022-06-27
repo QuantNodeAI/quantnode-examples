@@ -1,0 +1,29 @@
+{
+
+  "$id": "/chain_ftm/balance_move_ticks_hourly.json",
+  "title": "balance_move_ticks_hourly",
+  "description": "Aggregated hourly Balance Move Data distinguished by token and wallet",
+  "properties": {
+    "bucket": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Database type: timestamp with time zone. Default value: null"
+    },
+    "token_id": {
+      "type": "number",
+      "description": "Database type: integer. Default value: null"
+    },
+    "wallet_id": {
+      "type": "number",
+      "description": "Database type: integer. Default value: null"
+    },
+    "move": {
+      "type": "string",
+      "description": "Database type: text. Default value: null"
+    }
+  },
+  "required": [
+    "bucket"
+  ],
+  "type": "object"
+}

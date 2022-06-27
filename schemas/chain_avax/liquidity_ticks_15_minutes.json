@@ -1,0 +1,29 @@
+{
+
+  "$id": "/chain_avax/liquidity_ticks_15_minutes.json",
+  "title": "liquidity_ticks_15_minutes",
+  "description": "Aggregated 15 minutes LP Pool Liquidity Data",
+  "properties": {
+    "bucket": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Database type: timestamp with time zone. Default value: null"
+    },
+    "token_id": {
+      "type": "number",
+      "description": "Database type: integer. Default value: null"
+    },
+    "liquidity0": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    },
+    "liquidity1": {
+      "type": "number",
+      "description": "Database type: numeric. Default value: null"
+    }
+  },
+  "required": [
+    "bucket"
+  ],
+  "type": "object"
+}

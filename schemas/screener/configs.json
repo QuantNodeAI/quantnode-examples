@@ -1,0 +1,25 @@
+{
+
+  "$id": "/screener/configs.json",
+  "title": "configs",
+  "description": "Missing description",
+  "properties": {
+    "analyzer_id": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: null"
+    },
+    "token_id": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: null"
+    },
+    "active": {
+      "type": "boolean",
+      "description": "Database type: boolean. Default value: null"
+    }
+  },
+  "required": [
+    "analyzer_id",
+    "token_id"
+  ],
+  "type": "object"
+}

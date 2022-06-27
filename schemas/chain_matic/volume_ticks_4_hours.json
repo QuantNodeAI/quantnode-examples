@@ -1,0 +1,29 @@
+{
+
+  "$id": "/chain_matic/volume_ticks_4_hours.json",
+  "title": "volume_ticks_4_hours",
+  "description": "Aggregated 4 hours Volume Data of tokens on different platforms",
+  "properties": {
+    "bucket": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Database type: timestamp with time zone. Default value: null"
+    },
+    "token_id": {
+      "type": "number",
+      "description": "Database type: integer. Default value: null"
+    },
+    "platform_id": {
+      "type": "number",
+      "description": "Database type: integer. Default value: null"
+    },
+    "volume": {
+      "type": "string",
+      "description": "Database type: text. Default value: null"
+    }
+  },
+  "required": [
+    "bucket"
+  ],
+  "type": "object"
+}
