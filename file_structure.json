@@ -182,12 +182,10 @@
             {"type":"file","name":"filter_tokens.sql"},
             {"type":"file","name":"technical_indicators.sql"}
         ]},
-        {"type":"file","name":"test_file.txt"},
         {"type":"directory","name":"timeseries","contents":[
             {"type":"file","name":"prices.sql"},
             {"type":"file","name":"tohlcv.sql"}
         ]},
-        {"type":"file","name":"tree-json.sh"},
-        {"type":"file","name":"tree.sh"}
+        {"type":"file","name":"tree-json.sh"}
     ]}
 ]
