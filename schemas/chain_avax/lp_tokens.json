@@ -1,0 +1,45 @@
+{
+  "$id": "/chain_avax/lp_tokens.json",
+  "title": "lp_tokens",
+  "description": "All LP Tokens (Liquidity Pools) found on the Smart Chain",
+  "properties": {
+    "id": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: nextval('lp_tokens_id_seq'::regclass)"
+    },
+    "name": {
+      "type": "string",
+      "description": "Database type: text. Default value: null"
+    },
+    "symbol": {
+      "type": "string",
+      "description": "Database type: text. Default value: null"
+    },
+    "chain_id": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: null"
+    },
+    "decimals": {
+      "type": "string",
+      "description": "Database type: text. Default value: null"
+    },
+    "total_supply": {
+      "type": "string",
+      "description": "Database type: text. Default value: null"
+    },
+    "contract": {
+      "type": "string",
+      "description": "Database type: text. Default value: null"
+    },
+    "token0_id": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: null"
+    },
+    "token1_id": {
+      "type": "number",
+      "description": "Database type: bigint. Default value: null"
+    }
+  },
+  "required": [],
+  "type": "object"
+}
