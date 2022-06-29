@@ -1,4 +1,16 @@
 #!/usr/bin/env bash
+exclude=""
+while getopts 'e:' OPTION; do
+  case "$OPTION" in
+    e)
+      exclude="$OPTARG"
+      ;;
+    ?)
+      echo "script usage: $(basename \$0) [-e file_to_exclude]" >&2
+      exit 1
+      ;;
+  esac
+done
 
 dir_count=0
 file_count=0
@@ -16,6 +28,10 @@ traverse() {
      child=${child##*/}
      local child_prefix="    "
      local postfix=","
+
+     if [[ "$child" == "$exclude" ]]; then
+       continue
+     fi
 
      if [ $idx -eq $(( ${#children[@]} - 1)) ]; then
        child_prefix="    "
@@ -37,7 +53,7 @@ traverse() {
 
 root="."
 prefix="    "
-[ "$#" -ne 0 ] && root="$1"
+#[ "$#" -ne 0 ] && root="$1"
 echo "["
 echo "${prefix}{\"type\":\"directory\",\"name\":\"${root}\",\"contents\":["
 

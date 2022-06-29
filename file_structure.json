@@ -3,7 +3,6 @@
         {"type":"directory","name":"bar_chart","contents":[
             {"type":"file","name":"stepn_bnb_flow.sql"}
         ]},
-        {"type":"file","name":"file_structure.json"},
         {"type":"file","name":"LICENSE"},
         {"type":"directory","name":"line_chart","contents":[
             {"type":"file","name":"lp_liquidity.sql"},
@@ -18,12 +17,14 @@
         {"type":"file","name":"pre-commit.sh"},
         {"type":"file","name":"README.md"},
         {"type":"directory","name":"table_data","contents":[
+            {"type":"file","name":"analysis-binance.sql"},
             {"type":"file","name":"basic_info.sql"},
             {"type":"file","name":"filter_tokens.sql"},
             {"type":"file","name":"technical_indicators.sql"}
         ]},
         {"type":"directory","name":"timeseries","contents":[
             {"type":"file","name":"prices.sql"},
+            {"type":"file","name":"tohlcv_binance.sql"},
             {"type":"file","name":"tohlcv.sql"}
         ]},
         {"type":"file","name":"tree-json.sh"}
