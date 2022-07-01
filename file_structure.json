@@ -20,6 +20,7 @@
             {"type":"file","name":"analysis-binance.sql"},
             {"type":"file","name":"basic_info.sql"},
             {"type":"file","name":"filter_tokens.sql"},
+            {"type":"file","name":"publications.sql"},
             {"type":"file","name":"technical_indicators.sql"}
         ]},
         {"type":"directory","name":"timeseries","contents":[
