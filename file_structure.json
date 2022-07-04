@@ -19,9 +19,13 @@
         {"type":"directory","name":"table_data","contents":[
             {"type":"file","name":"analysis-binance.sql"},
             {"type":"file","name":"basic_info.sql"},
+            {"type":"file","name":"discord.sql"},
             {"type":"file","name":"filter_tokens.sql"},
             {"type":"file","name":"publications.sql"},
-            {"type":"file","name":"technical_indicators.sql"}
+            {"type":"file","name":"reddit.sql"},
+            {"type":"file","name":"technical_indicators.sql"},
+            {"type":"file","name":"telegram.sql"},
+            {"type":"file","name":"tweets.sql"}
         ]},
         {"type":"directory","name":"timeseries","contents":[
             {"type":"file","name":"prices.sql"},
