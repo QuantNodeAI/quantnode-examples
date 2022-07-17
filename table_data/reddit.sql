@@ -1,3 +1,4 @@
+-- Get reddit messages for last day with given tag
 SELECT id,
        title,
        subreddit_name,

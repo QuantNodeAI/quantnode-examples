@@ -1,3 +1,4 @@
+-- -- Get publications for last day with given tag
 SELECT id,
        title,
        published_at,

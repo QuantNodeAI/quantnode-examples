@@ -1,3 +1,4 @@
+-- Get hourly TOHLCV candles for given pair from the Binance exchange
 SELECT time_bucket('1 hour', price.bucket) as time,
        last(close_stable, close_time)      as close,
        first(open_stable, open_time)       as open,

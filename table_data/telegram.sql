@@ -1,3 +1,4 @@
+-- Get telegram messages for last day with given tag
 SELECT id,
        chat_name,
        created_at,

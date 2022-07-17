@@ -1,3 +1,4 @@
+-- Get token price hourly candles
 SELECT *
 FROM chain_bsc.price_ticks_hourly p
          inner join chain_bsc.tokens t on (t.id = p.token_id)

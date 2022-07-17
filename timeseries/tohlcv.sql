@@ -1,3 +1,4 @@
+-- Get hourly TOHLCV candles for given token
 SELECT p.bucket as time, open_stable, high_stable, low_stable, close_stable, v.volume
 FROM chain_bsc.price_ticks_hourly p
     join chain_bsc.volume_ticks_hourly v

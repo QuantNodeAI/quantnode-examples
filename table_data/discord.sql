@@ -1,3 +1,4 @@
+-- Get discord messages for last day with given tag
 SELECT id,
        channel_name,
        created_at,

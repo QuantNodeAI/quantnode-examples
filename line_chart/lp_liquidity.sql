@@ -1,3 +1,4 @@
+-- Timeseries of liquidity in th LP pool of queried lp token by its contract (liquidity of token0 and token1 in the pool)
 SELECT bucket as time, liquidity0, liquidity1
 FROM chain_bsc.liquidity_ticks_hourly
 WHERE bucket > '2022-04-01'

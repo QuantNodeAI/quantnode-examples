@@ -1,3 +1,4 @@
+-- Get filtered token by some technical indicators with its indicators and patterns as well
 SELECT (select t.symbol from chain_bsc.tokens t where t.id = a.token_id), a.*, tfa.*
 FROM screener.analyses a
          join screener.time_frame_analyses tfa on a.token_id = tfa.token_id

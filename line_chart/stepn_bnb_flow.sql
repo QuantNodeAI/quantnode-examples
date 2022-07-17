@@ -1,3 +1,5 @@
+-- Flow of BNB token on the BSC Chain through StepN game (see https://stepn.com/)
+-- In case you want to see flow through some other wallet, find wallet_id in the chain_bsc.addresses table
 SELECT date_trunc('day', confirmed_at)           AS block_date,
        SUM(CASE
                WHEN to_id = 61285418 THEN cast(value as numeric)

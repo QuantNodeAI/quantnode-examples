@@ -1,3 +1,4 @@
+-- Get tweet messages for last day with given tag
 SELECT id,
        created_at,
        content,

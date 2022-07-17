@@ -1,3 +1,4 @@
+-- All important analysis for tokens filtered by given conditions on different indicators
 SELECT pairs.symbol, a.*, tfa.*, a.volume24_h * a.price as volume_dollars
 FROM screener.analyses a
          join screener.time_frame_analyses tfa
