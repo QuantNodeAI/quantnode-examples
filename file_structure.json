@@ -6,7 +6,12 @@
         {"type":"file","name":"LICENSE"},
         {"type":"directory","name":"line_chart","contents":[
             {"type":"file","name":"lp_liquidity.sql"},
-            {"type":"file","name":"stepn_bnb_flow.sql"}
+            {"type":"file","name":"reddit_sentiment.sql"},
+            {"type":"file","name":"stepn_bnb_flow.sql"},
+            {"type":"file","name":"swap_number.sql"},
+            {"type":"file","name":"telegram_activity.sql"},
+            {"type":"file","name":"twitter_activity.sql"},
+            {"type":"file","name":"wallet_moves.sql"}
         ]},
         {"type":"directory","name":"one_value_data","contents":[
             {"type":"file","name":"volume_24h.sql"}
@@ -21,15 +26,19 @@
             {"type":"file","name":"basic_info.sql"},
             {"type":"file","name":"discord.sql"},
             {"type":"file","name":"filter_tokens.sql"},
+            {"type":"file","name":"price_changes.sql"},
             {"type":"file","name":"publications.sql"},
             {"type":"file","name":"reddit.sql"},
             {"type":"file","name":"technical_indicators.sql"},
             {"type":"file","name":"telegram.sql"},
+            {"type":"file","name":"tokens_with_pattern.sql"},
             {"type":"file","name":"tweets.sql"}
         ]},
         {"type":"directory","name":"timeseries","contents":[
             {"type":"file","name":"prices.sql"},
             {"type":"file","name":"tohlcv_binance.sql"},
+            {"type":"file","name":"tohlcv_bitfinex.sql"},
+            {"type":"file","name":"tohlcv_kucoin.sql"},
             {"type":"file","name":"tohlcv.sql"}
         ]},
         {"type":"file","name":"tree-json.sh"}
