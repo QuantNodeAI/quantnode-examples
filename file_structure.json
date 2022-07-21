@@ -40,7 +40,8 @@
             {"type":"file","name":"technical_indicators.sql"},
             {"type":"file","name":"telegram.sql"},
             {"type":"file","name":"tokens_with_pattern.sql"},
-            {"type":"file","name":"tweets.sql"}
+            {"type":"file","name":"tweets.sql"},
+            {"type":"file","name":"tx_by_address.sql"}
         ]},
         {"type":"directory","name":"timeseries","contents":[
             {"type":"file","name":"prices.sql"},
