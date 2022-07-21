@@ -15,9 +15,13 @@
             {"type":"file","name":"wallet_moves.sql"}
         ]},
         {"type":"directory","name":"one_value_data","contents":[
+            {"type":"file","name":"total_active_tokens.sql"},
+            {"type":"file","name":"total_adresses.sql"},
+            {"type":"file","name":"total_tokens.sql"},
             {"type":"file","name":"volume_24h.sql"}
         ]},
         {"type":"directory","name":"pie_chart","contents":[
+            {"type":"file","name":"bsc_stablecoins.sql"},
             {"type":"file","name":"volume_by_platform.sql"}
         ]},
         {"type":"file","name":"pre-commit.sh"},
