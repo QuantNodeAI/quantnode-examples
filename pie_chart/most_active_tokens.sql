@@ -6,4 +6,5 @@ SELECT token_id,
 FROM chain_bsc.balance_move_ticks_hourly
 WHERE bucket > now() - interval '24 hours'
 GROUP BY token_id
-ORDER BY unique_wallets desc;
+ORDER BY unique_wallets desc
+limit 100;

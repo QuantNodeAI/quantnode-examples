@@ -11,4 +11,5 @@ from (SELECT token0_id, sum(count) as count
                from chain_bsc.swap_number_ticks_hourly
                where bucket >= now() - interval '24 hours'
                group by token1_id) as t1 on token0_id = token1_id
-order by count desc;
+order by count desc
+limit 100;

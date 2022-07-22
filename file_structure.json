@@ -41,6 +41,7 @@
             {"type":"file","name":"swaps_by_token.sql"},
             {"type":"file","name":"technical_indicators.sql"},
             {"type":"file","name":"telegram.sql"},
+            {"type":"file","name":"tokens_by_volume.sql"},
             {"type":"file","name":"tokens_with_pattern.sql"},
             {"type":"file","name":"tweets.sql"},
             {"type":"file","name":"tx_by_address.sql"}
