@@ -22,6 +22,8 @@
         ]},
         {"type":"directory","name":"pie_chart","contents":[
             {"type":"file","name":"bsc_stablecoins.sql"},
+            {"type":"file","name":"most_active_tokens2.sql"},
+            {"type":"file","name":"most_active_tokens.sql"},
             {"type":"file","name":"volume_by_platform.sql"}
         ]},
         {"type":"file","name":"pre-commit.sh"},
