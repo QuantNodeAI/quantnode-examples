@@ -52,6 +52,10 @@
             {"type":"file","name":"telegram.sql"},
             {"type":"file","name":"tokens_by_volume.sql"},
             {"type":"file","name":"tokens_with_pattern.sql"},
+            {"type":"file","name":"top_falling_chain_tokens.sql"},
+            {"type":"file","name":"top_falling_exchange_pairs.sql"},
+            {"type":"file","name":"top_rising_chain_tokens.sql"},
+            {"type":"file","name":"top_rising_exchange_pairs.sql"},
             {"type":"file","name":"tweets.sql"},
             {"type":"file","name":"tx_by_address.sql"}
         ]},
