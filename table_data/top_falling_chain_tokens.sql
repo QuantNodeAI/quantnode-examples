@@ -23,5 +23,5 @@ SELECT CASE
 FROM screener.analyses
 WHERE updated_at >= now() - interval '1 hour'
   and exchange = 'Defi'
-ORDER BY price_change1_d ASC 
+ORDER BY price_change1_d ASC
 LIMIT 10;

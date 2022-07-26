@@ -41,6 +41,7 @@
             {"type":"file","name":"binance_pairs_by_volume.sql"},
             {"type":"file","name":"discord.sql"},
             {"type":"file","name":"filter_tokens.sql"},
+            {"type":"file","name":"find_lp_pool.sql"},
             {"type":"file","name":"kucoin_pairs_by_volume.sql"},
             {"type":"file","name":"price_changes.sql"},
             {"type":"file","name":"publications.sql"},
