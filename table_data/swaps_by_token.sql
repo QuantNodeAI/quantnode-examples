@@ -1,5 +1,4 @@
 -- Retrieve swaps for given token
--- CAUTION: DO NOT use order by yet (it is extremely slowing query down)
 
 SELECT created_at,
        block,
@@ -18,4 +17,5 @@ WHERE created_at >= '2022-07-01'
        (ARRAY(SELECT id FROM chain_bsc.tokens where contract = '0xAD29AbB318791D579433D831ed122aFeAf29dcfe')) or
        token1_id = ANY
        (ARRAY(SELECT id FROM chain_bsc.tokens where contract = '0xAD29AbB318791D579433D831ed122aFeAf29dcfe')))
+ORDER BY created_at
 limit 10;

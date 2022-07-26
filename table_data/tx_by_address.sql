@@ -15,4 +15,5 @@ WHERE confirmed_at >= '2022-07-01'
        (ARRAY(SELECT id FROM chain_bsc.addresses where address = '0xbaC14A55Da4327f79D69AF657AD6837aA49c9aC6'))
     or to_id = ANY
        (ARRAY(SELECT id FROM chain_bsc.addresses where address = '0xbaC14A55Da4327f79D69AF657AD6837aA49c9aC6')))
+order by confirmed_at
 limit 10;

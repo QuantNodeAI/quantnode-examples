@@ -1,5 +1,4 @@
 -- Retrieve swaps for given address
--- CAUTION: DO NOT use order by yet (it is extremely slowing query down)
 
 SELECT created_at,
        block,
