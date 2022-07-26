@@ -9,8 +9,10 @@ SELECT confirmed_at,
        value,
        tx_fee
 from chain_bsc.transactions
-where from_id = ANY
-      (ARRAY(SELECT id FROM chain_bsc.addresses where address = '0xbaC14A55Da4327f79D69AF657AD6837aA49c9aC6'))
-   or to_id = ANY
-      (ARRAY(SELECT id FROM chain_bsc.addresses where address = '0xbaC14A55Da4327f79D69AF657AD6837aA49c9aC6'))
+WHERE confirmed_at >= '2022-07-01'
+  and confirmed_at <= '2022-07-23'
+  and (from_id = ANY
+       (ARRAY(SELECT id FROM chain_bsc.addresses where address = '0xbaC14A55Da4327f79D69AF657AD6837aA49c9aC6'))
+    or to_id = ANY
+       (ARRAY(SELECT id FROM chain_bsc.addresses where address = '0xbaC14A55Da4327f79D69AF657AD6837aA49c9aC6')))
 limit 10;

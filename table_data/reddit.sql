@@ -1,4 +1,5 @@
--- Get reddit messages for last day with given tag
+-- Get reddit messages for given time interval with given tag
+
 SELECT id,
        title,
        subreddit_name,
@@ -7,7 +8,8 @@ SELECT id,
        emotion,
        tag
 FROM publications.reddit_data
-WHERE created_at >= now() - interval '1 day'
+WHERE created_at >= '2022-07-22'
+  and created_at <= '2022-07-23'
   and tag in ('cardano')
 ORDER BY created_at DESC
 LIMIT 10;

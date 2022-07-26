@@ -1,4 +1,5 @@
--- Get discord messages for last day with given tag
+-- Get discord messages for given time interval with given tag
+
 SELECT id,
        channel_name,
        created_at,
@@ -6,7 +7,8 @@ SELECT id,
        emotion,
        tag
 FROM publications.discord_data
-WHERE created_at >= now() - interval '1 day'
+where created_at >= '2022-07-22'
+  and created_at <= '2022-07-23'
   and tag in ('cardano')
 ORDER BY created_at DESC
 LIMIT 10;

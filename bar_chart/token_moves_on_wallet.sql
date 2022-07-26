@@ -9,7 +9,8 @@ SELECT time_bucket('1 hour', bucket) as time,
                else 0 END)           as in_amount,
        SUM(cast(move as numeric))    as net_amount
 FROM chain_bsc.balance_move_ticks_minutely
-WHERE bucket > now() - interval '5 days'
+WHERE bucket >= '2022-07-22'
+  and bucket <= '2022-07-23'
   and wallet_id = ANY
       (ARRAY(SELECT id from chain_bsc.addresses where address = '0xA1C6B6778A5aECCfBa77ca9472C7cfd26f2643c0'))
   and token_id = ANY
