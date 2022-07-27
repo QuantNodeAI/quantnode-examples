@@ -6,6 +6,7 @@
             {"type":"file","name":"exchange_volumes.sql"},
             {"type":"file","name":"stepn_bnb_flow.sql"},
             {"type":"file","name":"token_moves_on_wallet.sql"},
+            {"type":"file","name":"tokens_by_liquidity.sql"},
             {"type":"file","name":"twitter_tag_frequency.sql"}
         ]},
         {"type":"file","name":"LICENSE"},
@@ -43,6 +44,7 @@
             {"type":"file","name":"filter_tokens.sql"},
             {"type":"file","name":"find_lp_pool.sql"},
             {"type":"file","name":"kucoin_pairs_by_volume.sql"},
+            {"type":"file","name":"platforms_by_liquidity.sql"},
             {"type":"file","name":"price_changes.sql"},
             {"type":"file","name":"publications.sql"},
             {"type":"file","name":"reddit.sql"},
@@ -51,6 +53,7 @@
             {"type":"file","name":"swaps_by_token.sql"},
             {"type":"file","name":"technical_indicators.sql"},
             {"type":"file","name":"telegram.sql"},
+            {"type":"file","name":"tokens_by_liquidity_platform.sql"},
             {"type":"file","name":"tokens_by_volume.sql"},
             {"type":"file","name":"tokens_with_pattern.sql"},
             {"type":"file","name":"top_falling_chain_tokens.sql"},
