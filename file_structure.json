@@ -4,6 +4,7 @@
             {"type":"file","name":"chain_swapped_volume.sql"},
             {"type":"file","name":"discord_tag_frequency.sql"},
             {"type":"file","name":"exchange_volumes.sql"},
+            {"type":"file","name":"platforms_by_number_of_lp_tokens.sql"},
             {"type":"file","name":"stepn_bnb_flow.sql"},
             {"type":"file","name":"token_moves_on_wallet.sql"},
             {"type":"file","name":"tokens_by_liquidity.sql"},
@@ -16,6 +17,7 @@
             {"type":"file","name":"stepn_bnb_flow.sql"},
             {"type":"file","name":"swap_number.sql"},
             {"type":"file","name":"telegram_activity.sql"},
+            {"type":"file","name":"transactions_number.sql"},
             {"type":"file","name":"twitter_activity.sql"},
             {"type":"file","name":"wallet_moves.sql"}
         ]},
@@ -40,6 +42,7 @@
             {"type":"file","name":"analysis-binance.sql"},
             {"type":"file","name":"basic_info.sql"},
             {"type":"file","name":"binance_pairs_by_volume.sql"},
+            {"type":"file","name":"bitfinex_pairs_by_volume.sql"},
             {"type":"file","name":"discord.sql"},
             {"type":"file","name":"filter_tokens.sql"},
             {"type":"file","name":"find_lp_pool.sql"},
