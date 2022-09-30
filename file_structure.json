@@ -5,6 +5,7 @@
             {"type":"file","name":"discord_tag_frequency.sql"},
             {"type":"file","name":"exchange_volumes.sql"},
             {"type":"file","name":"platforms_by_number_of_lp_tokens.sql"},
+            {"type":"file","name":"reddit_users_byt_token_activity.sql"},
             {"type":"file","name":"stepn_bnb_flow.sql"},
             {"type":"file","name":"telegram_chats_by_token_activity.sql"},
             {"type":"file","name":"token_moves_on_wallet.sql"},
@@ -50,6 +51,7 @@
             {"type":"file","name":"filter_tokens.sql"},
             {"type":"file","name":"find_lp_pool.sql"},
             {"type":"file","name":"kucoin_pairs_by_volume.sql"},
+            {"type":"file","name":"open_interest_slope.sql"},
             {"type":"file","name":"platforms_by_liquidity.sql"},
             {"type":"file","name":"price_changes.sql"},
             {"type":"file","name":"publications.sql"},
@@ -70,6 +72,7 @@
             {"type":"file","name":"tx_by_address.sql"}
         ]},
         {"type":"directory","name":"timeseries","contents":[
+            {"type":"file","name":"open_interest.sql"},
             {"type":"file","name":"prices.sql"},
             {"type":"file","name":"tohlcv_binance.sql"},
             {"type":"file","name":"tohlcv_bitfinex.sql"},
