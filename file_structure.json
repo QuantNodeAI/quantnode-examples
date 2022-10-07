@@ -41,6 +41,7 @@
             {"type":"file","name":"volume_by_platform.sql"}
         ]},
         {"type":"file","name":"pre-commit.sh"},
+        {"type":"file","name":"query_times.txt"},
         {"type":"file","name":"README.md"},
         {"type":"directory","name":"table_data","contents":[
             {"type":"file","name":"analysis-binance.sql"},
@@ -77,6 +78,7 @@
             {"type":"file","name":"tohlcv_binance.sql"},
             {"type":"file","name":"tohlcv_bitfinex.sql"},
             {"type":"file","name":"tohlcv_kucoin.sql"},
+            {"type":"file","name":"tohlcv_open_interest_binance.sql"},
             {"type":"file","name":"tohlcv.sql"}
         ]},
         {"type":"file","name":"tree-json.sh"}
