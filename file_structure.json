@@ -54,6 +54,8 @@
             {"type":"file","name":"kucoin_pairs_by_volume.sql"},
             {"type":"file","name":"open_interest_slope.sql"},
             {"type":"file","name":"platforms_by_liquidity.sql"},
+            {"type":"file","name":"portfolio_by_wallet_address.sql"},
+            {"type":"file","name":"portfolio.sql"},
             {"type":"file","name":"price_changes.sql"},
             {"type":"file","name":"publications.sql"},
             {"type":"file","name":"reddit.sql"},
