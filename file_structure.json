@@ -16,6 +16,8 @@
         {"type":"file","name":"LICENSE"},
         {"type":"directory","name":"line_chart","contents":[
             {"type":"file","name":"lp_liquidity.sql"},
+            {"type":"file","name":"price_with_swaps_number.sql"},
+            {"type":"file","name":"price_with_telegram_activity.sql"},
             {"type":"file","name":"reddit_sentiment.sql"},
             {"type":"file","name":"stepn_bnb_flow.sql"},
             {"type":"file","name":"swap_number.sql"},
@@ -26,6 +28,7 @@
             {"type":"file","name":"wallet_moves.sql"}
         ]},
         {"type":"directory","name":"one_value_data","contents":[
+            {"type":"file","name":"holders.sql"},
             {"type":"file","name":"total_active_tokens.sql"},
             {"type":"file","name":"total_adresses.sql"},
             {"type":"file","name":"total_tokens.sql"},
