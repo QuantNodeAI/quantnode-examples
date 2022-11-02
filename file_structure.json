@@ -16,6 +16,7 @@
         {"type":"file","name":"LICENSE"},
         {"type":"directory","name":"line_chart","contents":[
             {"type":"file","name":"lp_liquidity.sql"},
+            {"type":"file","name":"price_with_chain_activity.sql"},
             {"type":"file","name":"price_with_swaps_number.sql"},
             {"type":"file","name":"price_with_telegram_activity.sql"},
             {"type":"file","name":"reddit_sentiment.sql"},
