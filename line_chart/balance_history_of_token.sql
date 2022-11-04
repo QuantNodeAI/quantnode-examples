@@ -25,8 +25,9 @@ WITH token AS (SELECT id, symbol FROM chain_bsc.tokens WHERE contract = '0x3A68A
 select time,
        net_amount,
        cast(curr_balance.balance as numeric) +
-       sum(-net_amount) over (order by time desc rows between unbounded preceding and current row ) as balance,
-       curr_balance.balance                                                                         as current_balance
+       coalesce(sum(-net_amount) over (order by time desc rows between unbounded preceding and 1 preceding),
+                0)          as balance,
+       curr_balance.balance as current_balance
 from data,
      curr_balance
 order by time;
