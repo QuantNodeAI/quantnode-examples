@@ -16,6 +16,7 @@
         {"type":"file","name":"LICENSE"},
         {"type":"directory","name":"line_chart","contents":[
             {"type":"file","name":"balance_history_of_token.sql"},
+            {"type":"file","name":"github_stats.sql"},
             {"type":"file","name":"lp_liquidity.sql"},
             {"type":"file","name":"price_with_chain_activity.sql"},
             {"type":"file","name":"price_with_swaps_number.sql"},
@@ -56,6 +57,7 @@
             {"type":"file","name":"discord.sql"},
             {"type":"file","name":"filter_tokens.sql"},
             {"type":"file","name":"find_lp_pool.sql"},
+            {"type":"file","name":"github-repositories.sql"},
             {"type":"file","name":"kucoin_pairs_by_volume.sql"},
             {"type":"file","name":"open_interest_slope.sql"},
             {"type":"file","name":"platforms_by_liquidity.sql"},
