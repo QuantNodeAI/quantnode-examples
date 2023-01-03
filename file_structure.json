@@ -5,7 +5,6 @@
             {"type":"file","name":"discord_tag_frequency.sql"},
             {"type":"file","name":"exchange_volumes.sql"},
             {"type":"file","name":"platforms_by_number_of_lp_tokens.sql"},
-            {"type":"file","name":"reddit_users_byt_token_activity.sql"},
             {"type":"file","name":"stepn_bnb_flow.sql"},
             {"type":"file","name":"telegram_chats_by_token_activity.sql"},
             {"type":"file","name":"token_moves_on_wallet.sql"},

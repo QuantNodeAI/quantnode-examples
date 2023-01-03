@@ -1,7 +1,7 @@
 -- Get swapped volume in the last 24 hours for individual chains
 
-SELECT chain, sum(volume24_h*price) as volume
-FROM screener.analyses
-WHERE chain in (1, 56, 137, 250, 43114)
+SELECT chain, sum(cast(volume24_h as decimal(38, 10))*cast(price as decimal(38, 10))) as volume
+FROM agg.screener.analyses
+WHERE chain in (137, 250, 43114) and price > 0
 GROUP BY chain
 ORDER BY volume desc;

@@ -1,7 +1,7 @@
 -- Get traded volumes in last 24 hours for individual exchanges
 
-SELECT exchange, sum(volume24_h*price) as volume
-FROM screener.analyses
+SELECT exchange, sum(cast(volume24_h as decimal(38, 10))*cast(price as decimal(38, 10))) as volume
+FROM agg.screener.analyses
 WHERE exchange in ('binance', 'kucoin', 'bitfinex')
-group by exchange
-order by volume desc;
+GROUP BY exchange
+ORDER BY volume desc;

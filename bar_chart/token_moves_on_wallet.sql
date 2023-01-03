@@ -1,19 +1,18 @@
--- Get token flow on the given wallet for last 5 days
+-- Get token flow on the given wallet for given time interval
 
-SELECT time_bucket('1 hour', bucket) as time,
-       SUM(case
-               when cast(move as numeric) < 0 then cast(move as numeric)
-               else 0 END)           as out_amount,
-       SUM(case
-               when cast(move as numeric) > 0 then cast(move as numeric)
-               else 0 END)           as in_amount,
-       SUM(cast(move as numeric))    as net_amount
-FROM chain_bsc.balance_move_ticks_minutely
-WHERE bucket >= '2022-07-22'
-  and bucket <= '2022-07-23'
-  and wallet_id = ANY
-      (ARRAY(SELECT id from chain_bsc.addresses where address = '0xA1C6B6778A5aECCfBa77ca9472C7cfd26f2643c0'))
-  and token_id = ANY
-      (ARRAY(SELECT id from chain_bsc.tokens where contract = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'))
-group by 1
+WITH token AS (SELECT id, symbol
+               FROM bsc.public.tokens
+               WHERE contract = '0x71e72DdE4152D274afD1F2DB43531Ed9E44A78Fa'),
+     address AS (SELECT id
+                 FROM bsc.public.addresses
+                 WHERE address = '0xF977814e90dA44bFA03b6295A0616a897441aceC')
+SELECT bucket                as time,
+       cast(move as decimal) as net_amount
+FROM agg.chain_bsc.balance_move_ticks_minutely,
+     token,
+     address
+WHERE bucket >= timestamp '2023-01-01'
+  and bucket <= timestamp '2023-01-03'
+  and wallet_id = address.id
+  and token_id = token.id
 order by 1;
