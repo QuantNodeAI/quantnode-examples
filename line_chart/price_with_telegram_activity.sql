@@ -4,17 +4,22 @@
 WITH token AS (SELECT id,
                       symbol,
                       'eth' as tag
-               FROM binance.pairs
+               FROM agg.binance.pairs
                WHERE symbol = 'ETHUSDT')
 SELECT a.bucket, a.price, b.count
-FROM (SELECT p.bucket, last_value(p.close_stable) OVER (PARTITION BY bucket) as price
-      FROM binance.price_ticks_hourly p,
+FROM (SELECT p.bucket, p.close_stable as price
+      FROM agg.binance.price_ticks_hourly p,
            token
       where p.bucket > timestamp '2022-10-05'
         and p.bucket < timestamp '2022-10-06'
         and p.token_id = token.id
       ORDER BY 1) a
          LEFT JOIN
-     (select bucket, count from publications.public.telegram_data_1_hour_count cnt, token 
-      where cnt.tag in (token.tag) and bucket >= timestamp '2022-10-05' and bucket < timestamp '2022-10-06') b
+     (select date_trunc('hour', created_at) as bucket,
+             count(message_id) as count
+      from pubs.telegram.messages cnt, token
+      where contains(tags, 'eth')
+        and created_at >= timestamp '2022-10-05' and created_at < timestamp '2022-10-06'
+      GROUP BY 1
+      ORDER BY 1) b
      on a.bucket = b.bucket;
