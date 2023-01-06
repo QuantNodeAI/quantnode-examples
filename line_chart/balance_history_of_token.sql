@@ -6,7 +6,7 @@ WITH curr_balance AS (SELECT balance
                       where token = token('0x3A68A9Cd188C324a45c06866eFD1C79605B66827', 56)
                         and wallet = wallet('0x5658f59D94249A3113153Daa7ED11E67AAf3E018', 56)),
      data as (SELECT bucket as time,
-                     move  as net_amount
+                     cast(move as decimal(38, 18))  as net_amount
               FROM agg.chain_bsc.balance_move_ticks_hourly
               WHERE bucket >= now() - interval '7' day
                 and bucket <= now()
@@ -15,8 +15,8 @@ WITH curr_balance AS (SELECT balance
               order by 1)
 select time,
        net_amount,
-       cast(curr_balance.balance as decimal) +
-       coalesce(sum(-cast(net_amount as decimal)) over (order by time desc rows between unbounded preceding and 1 preceding),
+       cast(curr_balance.balance as decimal(38, 18)) +
+       coalesce(sum(-net_amount) over (order by time desc rows between unbounded preceding and 1 preceding),
                 0)          as balance,
        curr_balance.balance as current_balance
 from data,
