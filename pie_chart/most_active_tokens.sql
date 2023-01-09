@@ -3,7 +3,7 @@
 SELECT token_id,
        (select t.symbol from bsc.public.tokens t where t.id = token_id) as token,
        count(distinct wallet_id) as unique_wallets
-FROM agg.chain_bsc.balance_move_ticks_hourly
+FROM series.chain_bsc.balance_move_ticks_hourly
 WHERE bucket > now() - interval '24' hour
 GROUP BY token_id
 ORDER BY unique_wallets desc

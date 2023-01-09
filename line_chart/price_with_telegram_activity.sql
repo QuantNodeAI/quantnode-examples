@@ -4,11 +4,11 @@
 WITH token AS (SELECT id,
                       symbol,
                       'eth' as tag
-               FROM agg.binance.pairs
+               FROM cex.binance.pairs
                WHERE symbol = 'ETHUSDT')
 SELECT a.bucket, a.price, b.count
 FROM (SELECT p.bucket, p.close_stable as price
-      FROM agg.binance.price_ticks_hourly p,
+      FROM cex.binance.price_ticks_hourly p,
            token
       where p.bucket > timestamp '2022-10-05'
         and p.bucket < timestamp '2022-10-06'

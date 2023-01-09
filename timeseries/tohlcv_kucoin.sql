@@ -5,9 +5,9 @@ SELECT price.bucket as time,
        high_stable  as high,
        low_stable   as low,
        v.volume     as volume
-FROM agg.kucoin.price_ticks_hourly price
-         join agg.kucoin.pairs pairs on (price.token_id = pairs.id)
-         join agg.kucoin.volume_ticks_hourly v
+FROM cex.kucoin.price_ticks_hourly price
+         join cex.kucoin.pairs pairs on (price.token_id = pairs.id)
+         join cex.kucoin.volume_ticks_hourly v
               on (price.bucket = v.bucket and price.token_id = v.token_id and price.platform_id = v.platform_id)
 WHERE price.bucket >= now() - interval '5' day
   and pairs.symbol = 'ETH-USDT'

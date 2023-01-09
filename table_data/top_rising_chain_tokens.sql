@@ -20,7 +20,7 @@ SELECT CASE
        cast(price_change1_d as decimal(38, 18)) as price_change1_d,
        volume24_h,
        market_cap
-FROM agg.screener.analyses
+FROM screener.screener.analyses
 WHERE updated_at >= now() - interval '1' hour
   and exchange = 'Defi'
 ORDER BY price_change1_d DESC

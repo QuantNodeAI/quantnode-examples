@@ -8,11 +8,11 @@ SELECT price.bucket          as time,
        v.volume              as volume,
        i.open_interest       as open_interest,
        i.open_interest_value as open_interest_value
-FROM agg.binance.price_ticks_15_minutes price
-         join agg.binance.pairs pairs on (price.token_id = pairs.id)
-         join agg.binance.volume_ticks_hourly v
+FROM cex.binance.price_ticks_15_minutes price
+         join cex.binance.pairs pairs on (price.token_id = pairs.id)
+         join cex.binance.volume_ticks_hourly v
               on (price.bucket = v.bucket and price.token_id = v.token_id and price.platform_id = v.platform_id)
-         join agg.binance.open_interest_15_minutes i
+         join cex.binance.open_interest_15_minutes i
               on (price.bucket = i.timestamp and price.token_id = i.pair_id)
 WHERE price.bucket >= timestamp '2022-09-30'
   and price.bucket <= timestamp '2022-10-01'

@@ -2,11 +2,11 @@
 
 SELECT CASE
            WHEN exchange = 'binance' THEN
-               (select symbol from agg.binance.pairs t where t.id = analyses.token_id)
+               (select symbol from cex.binance.pairs t where t.id = analyses.token_id)
            WHEN exchange = 'kucoin' THEN
-               (select symbol from agg.kucoin.pairs t where t.id = analyses.token_id)
+               (select symbol from cex.kucoin.pairs t where t.id = analyses.token_id)
            WHEN exchange = 'bitfinex' THEN
-               (select symbol from agg.bitfinex.pairs t where t.id = analyses.token_id)
+               (select symbol from cex.bitfinex.pairs t where t.id = analyses.token_id)
            END symbol,
        updated_at,
        exchange,
@@ -16,7 +16,7 @@ SELECT CASE
        cast(price_change1_d as decimal(38, 18)) as price_change1_d,
        volume24_h,
        market_cap
-FROM agg.screener.analyses
+FROM screener.screener.analyses
 WHERE updated_at >= now() - interval '1' hour
   and chain = 0
 ORDER BY price_change1_d DESC

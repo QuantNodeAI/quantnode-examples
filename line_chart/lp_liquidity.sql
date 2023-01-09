@@ -6,7 +6,7 @@ WITH lp_token AS (
     WHERE contract = '0x2d9b4109ed85F40Ef2fBFaa16539c7b156974Da3'
 )
 SELECT bucket as time, liquidity0, liquidity1
-FROM agg.chain_bsc.liquidity_ticks_hourly, lp_token
+FROM series.chain_bsc.liquidity_ticks_hourly, lp_token
 WHERE bucket > timestamp '2022-04-01'
   and bucket < timestamp '2022-04-12'
   and token_id = lp_token.id
