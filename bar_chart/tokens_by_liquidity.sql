@@ -1,7 +1,7 @@
 -- Get tokens by its liquidity against the biggest tokens (WETH, USDT, USDC) on ETH
 
 SELECT token_id,
-       (select symbol from eth.public.tokens t where t.id = token_id),
+       *symbol('token_id', 'eth', 'tokens'),
        sum(cast(liquidity_usd as decimal(38, 10))) as liquidity
 FROM series.chain_eth.token_liquidities
 WHERE against_id in (token('0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 'eth'),
