@@ -68,6 +68,7 @@
             {"type":"file","name":"tokens_with_pattern.sql"},
             {"type":"file","name":"top_falling_chain_tokens.sql"},
             {"type":"file","name":"top_falling_exchange_pairs.sql"},
+            {"type":"file","name":"topics.sql"},
             {"type":"file","name":"top_rising_chain_tokens.sql"},
             {"type":"file","name":"top_rising_exchange_pairs.sql"},
             {"type":"file","name":"tweets.sql"},
