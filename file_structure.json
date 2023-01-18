@@ -58,6 +58,7 @@
             {"type":"file","name":"price_changes.sql"},
             {"type":"file","name":"publications.sql"},
             {"type":"file","name":"reddit.sql"},
+            {"type":"file","name":"studies-events.sql"},
             {"type":"file","name":"swaps_by_address.sql"},
             {"type":"file","name":"swaps_by_lp_token.sql"},
             {"type":"file","name":"swaps_by_token.sql"},
