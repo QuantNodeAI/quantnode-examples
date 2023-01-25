@@ -1,0 +1,5 @@
+schedule~=1.1.0
+SQLAlchemy~=1.4.45
+python-dotenv~=0.21.0
+psycopg2-binary~=2.9.5
+trino~=0.320.0
