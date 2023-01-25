@@ -12,4 +12,4 @@ Queries are divided into the few categories by display option:
 
 -------------------------------------------
 
-[![](https://img.shields.io/badge/get%20back-%E2%86%A9-blue)](..)
+[![](https://img.shields.io/badge/get%20back-%E2%86%A9-blue)](../.)

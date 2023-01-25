@@ -42,4 +42,4 @@ In the *[example](/example)* directory are two files with example classes:
 
 -------------------------------------------
 
-[![](https://img.shields.io/badge/get%20back-%E2%86%A9-blue)](..)
+[![](https://img.shields.io/badge/get%20back-%E2%86%A9-blue)](../.)
