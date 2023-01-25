@@ -1,8 +1,10 @@
-# widget-examples
+# SQL Queries Examples
 Collection of SQL queries for Helixir widgets
 
-# Pre-commit installation
-Before use please enable `pre-commit` with this command:
-* `ln -s ../../pre-commit.sh .git/hooks/pre-commit`
-
-This `pre-commit` updates `file_structure.json` file, where directory tree structure is maintained.
+Queries are divided into the few categories by display option:
+* [Bar Chart](bar_chart)
+* [Line Chart](line_chart)
+* [One Value](one_value_data)
+* [Pie Chart](pie_chart)
+* [Table](table_data)
+* [Timeseries](timeseries)
