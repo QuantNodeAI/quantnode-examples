@@ -8,3 +8,8 @@ Queries are divided into the few categories by display option:
 * [Pie Chart](pie_chart)
 * [Table](table_data)
 * [Timeseries](timeseries)
+
+
+-------------------------------------------
+
+[![](https://img.shields.io/badge/get%20back-%E2%86%A9-blue)](..)

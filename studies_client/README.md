@@ -39,3 +39,7 @@ In the *[example](/example)* directory are two files with example classes:
 * `example_db_model.py` contains `ExampleDBModel` class that represents example database model for custom study with
   columns definition with its required settings. It also contains method for initialization database table based on the
   model and method for saving records to the database.
+
+-------------------------------------------
+
+[![](https://img.shields.io/badge/get%20back-%E2%86%A9-blue)](..)
