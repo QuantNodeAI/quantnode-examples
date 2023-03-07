@@ -16,6 +16,8 @@
 ## Description
 QuantNote examples repository contains few examples of how to use our services. Repository contains these example 
 packages:
+* **Query Api Examples** - see [README](query_api_examples/README.md) for more information, or open its [directory](query_api_examples)
+* **Rest Api Examples** - see [README](rest_api_examples/README.md) for more information, or open its [directory](rest_api_examples)
 * **Example SQL Queries** - see [README](sql_queries/README.md) for more information, or open its [directory](sql_queries)
 * **Studies client sample** - see [README](studies_client/README.md) for more information, or open its [directory](studies_client)
 

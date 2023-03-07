@@ -1,0 +1,8 @@
+git+https://github.com/QuantNote/query-api-client.git
+pandas~=1.5.3
+requests~=2.28.1
+python-dotenv~=0.21.0
+tqdm~=4.64.1
+plotly~=5.13.0
+kaleido~=0.2.1
+wordcloud~=1.8.2.2
