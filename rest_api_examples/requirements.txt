@@ -1,4 +1,4 @@
-git+https://github.com/QuantNote/pyhelixir-client.git
+git+https://github.com/QuantNote/pyquant-client.git
 matplotlib==3.5.1
 matplotlib-inline==0.1.3
 pandas==1.4.0
