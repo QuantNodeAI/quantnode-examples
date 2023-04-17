@@ -8,8 +8,8 @@ WITH pair AS (
 SELECT timestamp as time,
        open_interest,
        open_interest_value
-FROM cex.binance.open_interest_15_minutes, pair
-WHERE timestamp > timestamp '2022-09-30'
-  and timestamp < timestamp '2022-10-01'
+FROM cex.binance.open_interests, pair
+WHERE timestamp > timestamp '2023-04-14'
+  and timestamp < timestamp '2023-04-16'
   and pair_id = pair.id
 order by 1;

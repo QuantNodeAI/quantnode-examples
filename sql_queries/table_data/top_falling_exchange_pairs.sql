@@ -12,12 +12,11 @@ SELECT CASE
        exchange,
        created,
        price,
-       price_change1_h,
-       cast(price_change1_d as decimal(38, 18)) as price_change1_d,
-       volume24_h,
+       price_change_1h,
+       price_change_1d,
+       volume_24h,
        market_cap
 FROM screener.screener.analyses
 WHERE updated_at >= now() - interval '1' hour
-  and chain = 0
-ORDER BY price_change1_d
+ORDER BY price_change_1d
 LIMIT 10;
